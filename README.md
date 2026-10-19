@@ -222,7 +222,6 @@ aws-cloud-security-posture-management/
 │   └── report_generator.py
 ├── tests/
 ├── screenshots/
-├── policies/
 ├── reports/
 ├── requirements.txt
 ├── .gitignore
