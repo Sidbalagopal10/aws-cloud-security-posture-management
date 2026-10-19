@@ -1,0 +1,64 @@
+{
+  "buckets": [
+    {
+      "name": "company-public-test",
+      "public_access_block": {
+        "BlockPublicAcls": false,
+        "IgnorePublicAcls": false,
+        "BlockPublicPolicy": false,
+        "RestrictPublicBuckets": false
+      },
+      "encryption": "AES256",
+      "versioning": "Disabled",
+      "logging": false
+    },
+    {
+      "name": "company-secure-data",
+      "public_access_block": {
+        "BlockPublicAcls": true,
+        "IgnorePublicAcls": true,
+        "BlockPublicPolicy": true,
+        "RestrictPublicBuckets": true
+      },
+      "encryption": "aws:kms",
+      "versioning": "Enabled",
+      "logging": true
+    },
+    {
+      "name": "company-finance-records",
+      "public_access_block": {
+        "BlockPublicAcls": true,
+        "IgnorePublicAcls": true,
+        "BlockPublicPolicy": true,
+        "RestrictPublicBuckets": true
+      },
+      "encryption": "AES256",
+      "versioning": "Enabled",
+      "logging": true
+    },
+    {
+      "name": "company-development-logs",
+      "public_access_block": {
+        "BlockPublicAcls": true,
+        "IgnorePublicAcls": true,
+        "BlockPublicPolicy": true,
+        "RestrictPublicBuckets": true
+      },
+      "encryption": "aws:kms",
+      "versioning": "Disabled",
+      "logging": false
+    },
+    {
+      "name": "company-backup-archive",
+      "public_access_block": {
+        "BlockPublicAcls": true,
+        "IgnorePublicAcls": true,
+        "BlockPublicPolicy": true,
+        "RestrictPublicBuckets": true
+      },
+      "encryption": "aws:kms",
+      "versioning": "Enabled",
+      "logging": true
+    }
+  ]
+}
